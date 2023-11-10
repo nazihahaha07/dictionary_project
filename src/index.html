@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header><h1>🐱WordWise Dictionary🐾</h1></header>
+      <div class="search">
+        <input type="text" id="word_input" placeholder="Search a word" required spellcheck="false">
+        <i class="fas fa-search"></i>
+        <br>
+        <span class="material-icons" onclick="clearSearch()">close</span>
+      </div>
+      <p class="info-text">Type any existing word and press search to get definition, example, antonyms.</p>
+      <br>
+      <div id="display"></div>
+      <button type="button" onclick="buttonClicked()" style="background-color: #007BFF; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px;">Search</button>
+      <br>
+      <a href="crud.html" style="text-decoration: none;"><button type="button" style="background-color: #4CAF50; color: #fff; border: none; padding: 10px 20px; cursor: pointer; border-radius: 5px; margin-top: 10px;">Word of the Day</button></a>
+    </div>
+    <script src="fetchapi.js"></script>
+  </body>
+</html>
